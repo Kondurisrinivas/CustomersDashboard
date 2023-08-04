@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#filterButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+#searchInput {
+  width: 250px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#filterButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.customer-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Styles for the customer table */
+#customerTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#customerTable th,
+#customerTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+#customerTable th {
+  background-color: #f0f0f0;
+}
+
+/* Alternate row colors */
+#customerTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Styles for the filter page */
+#filterPage {
+  display: none;
+}
+
+#filterPage.active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#filterPageContent {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CUSTOMERS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>CUSTOMERS</h1>
+    <div class="filter-container">
+      <div class="filter-inputs">
+        <label for="filterRegion">Region:</label>
+        <input type="text" id="filterRegion" list="regionOptions" placeholder="Enter region...">
+        <datalist id="regionOptions"></datalist>
+        <label for="filterCountry">Country:</label>
+        <input type="text" id="filterCountry" list="countryOptions" placeholder="Enter country...">
+        <datalist id="countryOptions"></datalist>
+        <label for="filterStatus">Status:</label>
+        <input type="text" id="filterStatus" list="statusOptions" placeholder="Enter status...">
+        <datalist id="statusOptions"></datalist>
+        <label for="filterOrganization">Organization:</label>
+        <input type="text" id="filterOrganization" list="organizationOptions" placeholder="Enter organization...">
+        <datalist id="organizationOptions"></datalist>
+        <label for="searchInput">Customer Name:</label>
+        <input type="text" id="searchInput" list="nameOptions" placeholder="Search for customers...">
+        <datalist id="nameOptions"></datalist>
+
+      </div>
+    </div>
+    <div class="filter-buttons">
+      <button id="filterButton">Search</button>
+      <button id="resetButton">Reset</button>
+    </div>
+
+    <table id="customerTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Country</th>
+          <th>Region</th>
+          <th>Status</th>
+          <th>Organization</th>
+        </tr>
+      </thead>
+      <tbody id="customerList">
+      </tbody>
+    </table>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="filter_results.js"></script>
+</body>
+
+</html>
